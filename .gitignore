@@ -26,3 +26,6 @@ dist-ssr
 # Large / unprocessed source images (kept locally only)
 public/images/ll.jpg
 public/images/EVa.png
+
+# Claude Design canvas working files (local exploration only)
+design-canvas/
