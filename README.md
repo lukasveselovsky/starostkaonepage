@@ -1,0 +1,3 @@
+# starostkaonepage
+
+Jednostránková webová prezentácia.
