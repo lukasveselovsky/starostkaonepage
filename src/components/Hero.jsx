@@ -6,6 +6,7 @@ import useParallax from '../hooks/useParallax';
 export default function Hero() {
   const bgRef = useParallax(0.35);
   const portraitRef = useParallax(0.12);
+  const base = import.meta.env.BASE_URL;
 
   return (
     <Box
@@ -25,7 +26,7 @@ export default function Hero() {
         sx={{
           position: 'absolute',
           inset: '-10% 0 -10% 0',
-          backgroundImage: 'url(/images/dedina.jpg)',
+          backgroundImage: `url(${base}images/dedina.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           willChange: 'transform',
@@ -107,7 +108,7 @@ export default function Hero() {
       >
         <Box
           component="img"
-          src="/images/eva-portrait.png"
+          src={`${base}images/eva-portrait.png`}
           alt="Eva Veselovská"
           sx={{
             width: '100%',
