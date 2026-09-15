@@ -1,121 +1,16 @@
 <!doctype html>
 <html lang="sk">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eva Veselovská — Starostka pre všetkých Lúžňanov</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <nav class="navbar">
-    <div class="navbar__brand">Eva Veselovská</div>
-    <button class="navbar__toggle" id="navToggle" aria-label="Menu">☰</button>
-    <div class="navbar__links" id="navLinks">
-      <a href="#o-mne">O mne</a>
-      <a href="#vizia">Vízia</a>
-      <a href="#program">Program</a>
-      <a href="#kontakt">Kontakt</a>
-    </div>
-  </nav>
-
-  <header class="hero" id="hero">
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__eyebrow">Voľby 2026 · Liptovská Lúžna</p>
-      <h1 class="hero__title">Starostka<br>pre všetkých<br>Lúžňanov</h1>
-      <p class="hero__name">Eva Veselovská — nezávislá kandidátka na starostku</p>
-      <a href="#o-mne" class="btn btn--primary">Spoznajte môj program ↓</a>
-    </div>
-    <div class="hero__portrait">
-      <img src="images/eva-portrait.png" alt="Eva Veselovská" onerror="this.parentElement.style.display='none'">
-    </div>
-  </header>
-
-  <main>
-
-    <section id="o-mne" class="section section--intro">
-      <div class="section__inner">
-        <span class="section__tag">O mne</span>
-        <h2 class="section__title">30 rokov v službách obce</h2>
-        <div class="intro__text">
-          <p>Rozhodla som sa kandidovať na starostku obce na obdobie rokov 2026 – 2030. Na našej obci a jej ďalšom rozvoji mi úprimne záleží. Svoju prácu v samospráve vykonávam s rešpektom k ľuďom a ich každodenným potrebám.</p>
-          <p>Na obecnom úrade pracujem už 30 rokov, počas ktorých som prešla rôznymi pracovnými pozíciami. Veľmi podrobne poznám problematiku samosprávy, spôsob jej fungovania, potreby našej obce, ako aj problémy, ktoré trápia jej obyvateľov. Tridsať rokov praxe v samospráve mi prinieslo rozsiahle odborné znalosti, praktické skúsenosti a dôkladné poznanie fungovania obce.</p>
-          <p>Počas troch desaťročí práce na obecnom úrade som mala možnosť sledovať, ako sa naša obec mení, akým problémom čelí a aké nové možnosti sa pred ňou postupne otvárajú. Poznám každodenné fungovanie obecného úradu, administratívne procesy, prípravu projektov aj praktické problémy, s ktorými sa občania obracajú na samosprávu.</p>
-          <p>Svoje skúsenosti chcem využiť pri ďalšom rozvoji Liptovskej Lúžnej tak, aby obec dokázala riešiť nielen aktuálne problémy, ale zároveň sa systematicky pripravovala na svoju budúcnosť.</p>
-        </div>
-        <div class="stat">
-          <span class="stat__number">30</span>
-          <span class="stat__label">rokov praxe na obecnom úrade</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="vizia" class="section section--vision">
-      <div class="section__inner">
-        <span class="section__tag section__tag--light">Moja vízia</span>
-        <h2 class="section__title section__title--light">Vízia napredovania obce</h2>
-        <p class="section__lead">Liptovská Lúžna má potenciál rásť a držať si svojich obyvateľov. Verím, že spoločnou prácou dokážeme obec posunúť ďalej — s rešpektom k jej histórii aj k potrebám budúcich generácií.</p>
-      </div>
-    </section>
-
-    <section id="program" class="section section--goals">
-      <div class="section__inner">
-        <span class="section__tag">Dlhodobé ciele</span>
-        <h2 class="section__title">Kam obec smerujem</h2>
-        <div class="accordion" id="accordion-long"></div>
-      </div>
-    </section>
-
-    <section class="section section--goals section--goals-alt">
-      <div class="section__inner">
-        <span class="section__tag">Krátkodobé ciele</span>
-        <h2 class="section__title">Čo chcem zmeniť už teraz</h2>
-        <div class="accordion" id="accordion-short"></div>
-      </div>
-    </section>
-
-    <section class="section section--thanks">
-      <div class="section__inner section__inner--narrow">
-        <blockquote class="thanks__quote">
-          „Touto cestou by som sa chcela poďakovať doterajšiemu starostovi Ing. Albínovi Husarčíkovi za jeho 26-ročnú prácu na zveľaďovaní obce.“
-        </blockquote>
-        <p>Realizácia uvedených zámerov si bude vyžadovať spoluprácu obecného zastupiteľstva, pracovníkov obecného úradu, miestnych organizácií, spolkov a samotných občanov. Verím, že spoločne budeme našu obec rozvíjať a zveľaďovať v prospech nás všetkých.</p>
-        <p class="thanks__signoff">Ďakujem Vám za váš hlas i dôveru.<br><strong>Eva Veselovská</strong></p>
-      </div>
-    </section>
-
-    <section id="kontakt" class="section section--contact">
-      <div class="section__inner section__inner--narrow">
-        <span class="section__tag section__tag--light">Kontakt</span>
-        <h2 class="section__title section__title--light">Ozvite sa mi</h2>
-        <div class="contact-grid">
-          <a class="contact-card" href="tel:+421000000000">
-            <span class="contact-card__icon">☎</span>
-            <span>Telefón<br><strong>doplniť číslo</strong></span>
-          </a>
-          <a class="contact-card" href="mailto:eva.veselovska@example.sk">
-            <span class="contact-card__icon">✉</span>
-            <span>E-mail<br><strong>doplniť e-mail</strong></span>
-          </a>
-          <a class="contact-card" href="#" target="_blank" rel="noopener">
-            <span class="contact-card__icon">f</span>
-            <span>Facebook<br><strong>doplniť odkaz</strong></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2026 Eva Veselovská — kandidátka na starostku obce Liptovská Lúžna</p>
-  </footer>
-
-  <script src="content.js"></script>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Eva Veselovská — Starostka pre všetkých Lúžňanov</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
