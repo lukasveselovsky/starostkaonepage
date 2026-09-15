@@ -1,11 +1,8 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import useParallax from '../hooks/useParallax';
 
 export default function Vision() {
-  const bgRef = useParallax(0.15);
-
   return (
     <Box
       component="section"
@@ -13,26 +10,35 @@ export default function Vision() {
       sx={{
         position: 'relative',
         overflow: 'hidden',
-        py: { xs: 8, md: 12 },
+        py: { xs: 8, md: 10 },
+        bgcolor: 'primary.main',
       }}
     >
-      <Box
-        ref={bgRef}
+      <Typography
+        aria-hidden
         sx={{
           position: 'absolute',
-          inset: '-15% 0',
-          background: 'linear-gradient(120deg, #4f1119, #7a1f2b)',
-          willChange: 'transform',
+          right: { xs: -40, md: 30 },
+          top: '50%',
+          transform: 'translateY(-50%)',
+          fontFamily: '"Bricolage Grotesque", sans-serif',
+          fontSize: { xs: '5rem', md: '13rem' },
+          fontWeight: 800,
+          color: 'rgba(255,255,255,0.08)',
+          whiteSpace: 'nowrap',
+          userSelect: 'none',
         }}
-      />
-      <Container maxWidth="md" sx={{ position: 'relative', zIndex: 1 }}>
-        <Typography variant="overline" sx={{ color: 'secondary.main' }}>
+      >
+        2026→2030
+      </Typography>
+      <Container maxWidth="lg" sx={{ position: 'relative' }}>
+        <Typography variant="overline" sx={{ color: 'rgba(255,255,255,0.75)' }}>
           Moja vízia
         </Typography>
-        <Typography variant="h2" sx={{ fontSize: { xs: '2rem', md: '2.75rem' }, mb: 3, color: '#fff' }}>
+        <Typography variant="h2" sx={{ fontSize: { xs: '1.9rem', md: '2.5rem' }, mb: 2, mt: 1, color: '#fff' }}>
           Vízia napredovania obce
         </Typography>
-        <Typography sx={{ fontSize: '1.2rem', maxWidth: 640, color: '#f1e6d8' }}>
+        <Typography sx={{ fontSize: '1.1rem', maxWidth: 620, color: 'rgba(255,255,255,0.9)', lineHeight: 1.6 }}>
           Liptovská Lúžna má potenciál rásť a držať si svojich obyvateľov. Verím, že spoločnou
           prácou dokážeme obec posunúť ďalej — s rešpektom k jej histórii aj k potrebám
           budúcich generácií.

@@ -12,13 +12,13 @@ export default function Goals({ id, tag, title, items, alt }) {
     <Box
       component="section"
       id={id}
-      sx={{ py: { xs: 8, md: 10 }, bgcolor: alt ? '#f4ead9' : 'background.default' }}
+      sx={{ py: { xs: 7, md: 9 }, bgcolor: alt ? '#eee7da' : 'background.default' }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Typography variant="overline" color="primary.main">
           {tag}
         </Typography>
-        <Typography variant="h2" sx={{ fontSize: { xs: '1.8rem', md: '2.5rem' }, mb: 4, color: 'primary.dark' }}>
+        <Typography variant="h2" sx={{ fontSize: { xs: '1.7rem', md: '2.25rem' }, mb: 4, mt: 1 }}>
           {title}
         </Typography>
 
@@ -29,33 +29,44 @@ export default function Goals({ id, tag, title, items, alt }) {
               disableGutters
               elevation={0}
               sx={{
-                border: '1px solid rgba(122,31,43,0.12)',
-                boxShadow: '0 2px 10px rgba(36,20,23,0.04)',
-                '&.Mui-expanded': { boxShadow: '0 6px 20px rgba(36,20,23,0.08)' },
+                bgcolor: '#fff',
+                boxShadow: '0 2px 14px rgba(27,27,24,0.05)',
+                '&.Mui-expanded': { boxShadow: '0 8px 26px rgba(27,27,24,0.09)' },
               }}
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon sx={{ color: 'primary.main' }} />}
-                sx={{ px: 3, py: 1 }}
+                sx={{ px: { xs: 2, md: 3.5 }, py: 1.5 }}
               >
-                <Typography
-                  sx={{
-                    fontFamily: '"Fraunces", serif',
-                    fontWeight: 700,
-                    fontSize: '1.1rem',
-                    color: 'primary.dark',
-                  }}
-                >
-                  <Box component="span" sx={{ color: 'secondary.dark', fontWeight: 800, mr: 1.5 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2.5 }}>
+                  <Typography
+                    sx={{
+                      fontFamily: '"Bricolage Grotesque", sans-serif',
+                      fontWeight: 800,
+                      fontSize: { xs: '1.6rem', md: '2rem' },
+                      color: 'primary.main',
+                      opacity: 0.35,
+                      lineHeight: 1,
+                      minWidth: { xs: 36, md: 46 },
+                    }}
+                  >
                     {String(i + 1).padStart(2, '0')}
-                  </Box>
-                  {item.title}
-                </Typography>
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontFamily: '"Bricolage Grotesque", sans-serif',
+                      fontWeight: 700,
+                      fontSize: { xs: '1rem', md: '1.15rem' },
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                </Box>
               </AccordionSummary>
-              <AccordionDetails sx={{ px: 3, pb: 3 }}>
+              <AccordionDetails sx={{ px: { xs: 2, md: 3.5 }, pb: 3, pl: { xs: 2, md: '106px' } }}>
                 <Stack spacing={1.5}>
                   {item.text.map((p, j) => (
-                    <Typography key={j} sx={{ color: 'text.secondary' }}>
+                    <Typography key={j} sx={{ color: 'text.secondary', fontSize: '0.98rem', lineHeight: 1.7 }}>
                       {p}
                     </Typography>
                   ))}

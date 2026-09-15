@@ -1,0 +1,12 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 4400, "title": "Hlavný návrh — moderný" },
+    { "file": "AltBold.dc.html", "x": 1600, "y": 0, "w": 1440, "h": 900, "title": "Alternatíva — výrazná/tmavá" },
+    { "file": "AltMinimal.dc.html", "x": 1600, "y": 1000, "w": 1440, "h": 900, "title": "Alternatíva — minimalistická" }
+  ],
+  "annotations": [
+    { "id": "note-main", "x": 0, "y": -110, "w": 500, "text": "Hlavný smer: čisté, moderné, farebný akcent (zelená), Bricolage Grotesque + Sora, organické tvary namiesto plnej foto hero sekcie." },
+    { "id": "note-alts", "x": 1600, "y": -110, "w": 500, "text": "Dve alternatívy len pre hero — pre porovnanie štýlu, ak hlavný smer nesadne." }
+  ],
+  "launch": { "view": "focused", "file": "Main.dc.html" }
+}

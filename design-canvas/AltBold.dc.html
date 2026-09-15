@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700;6..96,800;6..96,900&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Jost', system-ui, sans-serif; color: #fff; }
+    .display { font-family: 'Bodoni Moda', serif; }
+  </style>
+</helmet>
+
+<div style="position:relative; width:100%; height:900px; background:#12100e; overflow:hidden;">
+  <img src="dedina-thumb.jpg" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.2) brightness(0.55);">
+  <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(18,16,14,0.55), rgba(18,16,14,0.75));"></div>
+  <div style="position:absolute; inset:0; background: #d9603b; mix-blend-mode: color; opacity: 0.55;"></div>
+
+  <div style="position:relative; display:flex; align-items:center; justify-content:space-between; padding: 30px 64px;">
+    <div style="font-weight:700; font-size: 18px; letter-spacing: 0.02em;">EVA VESELOVSKÁ</div>
+    <div style="padding: 10px 22px; border-radius: 2px; border: 1px solid rgba(255,255,255,0.5); font-size: 13px; font-weight: 600; letter-spacing: 0.08em;">KONTAKT</div>
+  </div>
+
+  <div style="position:relative; display:flex; flex-direction:column; align-items:center; text-align:center; padding: 60px 40px 0;">
+    <div style="font-size: 14px; font-weight: 600; letter-spacing: 0.3em; color: #f4c9b8; margin-bottom: 26px;">VOĽBY 2026 · LIPTOVSKÁ LÚŽNA</div>
+    <div class="display" style="font-size: 108px; font-weight: 800; line-height: 0.95; letter-spacing: -0.01em;">
+      STAROSTKA<br>PRE VŠETKÝCH<br>LÚŽŇANOV
+    </div>
+    <div style="margin-top: 34px; font-size: 17px; max-width: 480px; color: rgba(255,255,255,0.85); line-height:1.6;">
+      Nezávislá kandidátka na starostku — 30 rokov skúseností priamo na obecnom úrade.
+    </div>
+    <div style="margin-top: 40px; padding: 18px 44px; background:#fff; color:#12100e; font-weight: 700; font-size: 15px; letter-spacing: 0.04em;">SPOZNAJTE PROGRAM</div>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

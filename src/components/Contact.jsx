@@ -1,8 +1,6 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -15,59 +13,50 @@ const CARDS = [
 
 export default function Contact() {
   return (
-    <Box
-      component="section"
-      id="kontakt"
-      sx={{
-        py: { xs: 8, md: 10 },
-        background: 'linear-gradient(160deg, #1c2333, #4f1119)',
-        color: '#fff',
-      }}
-    >
+    <Box component="section" id="kontakt" sx={{ py: { xs: 8, md: 10 }, bgcolor: '#171712' }}>
       <Container maxWidth="sm" sx={{ textAlign: 'center' }}>
-        <Typography variant="overline" sx={{ color: 'secondary.main' }}>
+        <Typography variant="overline" sx={{ color: 'primary.light' }}>
           Kontakt
         </Typography>
-        <Typography variant="h2" sx={{ fontSize: { xs: '1.8rem', md: '2.5rem' }, mb: 5, color: '#fff' }}>
+        <Typography variant="h2" sx={{ fontSize: { xs: '1.7rem', md: '2.25rem' }, mb: 5.5, mt: 1, color: '#fff' }}>
           Ozvite sa mi
         </Typography>
 
-        <Grid container spacing={2}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', gap: { xs: 3, md: 7 }, flexWrap: 'wrap' }}>
           {CARDS.map(({ icon: Icon, label, value, href }) => (
-            <Grid size={{ xs: 12, sm: 4 }} key={label}>
-              <Paper
-                component="a"
-                href={href}
-                elevation={0}
+            <Box
+              key={label}
+              component="a"
+              href={href}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 1.25,
+                textDecoration: 'none',
+                width: 120,
+              }}
+            >
+              <Box
                 sx={{
+                  width: 60,
+                  height: 60,
+                  borderRadius: '50%',
+                  bgcolor: 'primary.main',
                   display: 'flex',
-                  flexDirection: 'column',
                   alignItems: 'center',
-                  gap: 1,
-                  py: 4,
-                  px: 2,
-                  textDecoration: 'none',
-                  color: '#fff',
-                  bgcolor: 'rgba(255,255,255,0.06)',
-                  border: '1px solid rgba(255,255,255,0.12)',
-                  borderRadius: 4,
-                  transition: 'background 0.2s, transform 0.2s',
-                  '&:hover': {
-                    bgcolor: 'rgba(201,162,75,0.18)',
-                    transform: 'translateY(-3px)',
-                  },
+                  justifyContent: 'center',
+                  transition: 'transform 0.2s',
+                  '&:hover': { transform: 'translateY(-3px)' },
                 }}
               >
-                <Icon sx={{ fontSize: '1.8rem', color: 'secondary.main' }} />
-                <Typography variant="body2">
-                  {label}
-                  <br />
-                  <strong>{value}</strong>
-                </Typography>
-              </Paper>
-            </Grid>
+                <Icon sx={{ color: '#fff', fontSize: '1.6rem' }} />
+              </Box>
+              <Typography sx={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.55)' }}>{label}</Typography>
+              <Typography sx={{ fontSize: '0.85rem', fontWeight: 700, color: '#fff' }}>{value}</Typography>
+            </Box>
           ))}
-        </Grid>
+        </Box>
       </Container>
     </Box>
   );
